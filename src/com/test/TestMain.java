@@ -27,7 +27,7 @@ public class TestMain {
 		      fileAppender.activateOptions();   
 		}  
 		
-		log.warn("123!!!中文");
+		log.warn("123!!!脰脨脦脛");
 		
 		log.debug("log.debug");
 		
@@ -39,7 +39,7 @@ public class TestMain {
 		log.fatal("log.fatal");
 		
 		
-		log1.warn("123!!!中文111");
+		log1.warn("123!!!脰脨脦脛111");
 		
 		log1.debug("log.debug111");
 		
@@ -53,6 +53,8 @@ public class TestMain {
 		log1.fatal("log.fatal111");
 		
 		log1.fatal("log.fatal777");
+		
+		//123test
 
 	}
 
