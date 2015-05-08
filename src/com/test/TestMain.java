@@ -45,10 +45,14 @@ public class TestMain {
 		
 		log1.info("log.info111");
 		
+		log1.info("log.info1125551");
+		
 		log1.error("log.error111");
 		
 		
 		log1.fatal("log.fatal111");
+		
+		log1.fatal("log.fatal777");
 
 	}
 
