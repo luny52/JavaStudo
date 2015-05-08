@@ -54,10 +54,7 @@ public class TestMain {
 		
 		log1.fatal("log.fatal777");
 		
-		//123test
-		
-		
-		//llll
+		//123test ....
 
 	}
 
