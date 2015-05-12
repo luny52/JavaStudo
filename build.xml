@@ -13,10 +13,9 @@
 		<mkdir dir="${output.dir}" />
 		<mkdir dir="${output.dir}/${lib.dir}" />
 		<mkdir dir="${build.dir}" />
-		<copy todir="./${output.dir}" file="run.bat">
-		</copy>
-		<copydir dest="${output.dir}/${lib.dir}" src="./${lib.dir}">
-		</copydir>
+		<copy todir="./${build.dir}" file="log4j.properties" />
+		<copy todir="./${output.dir}" file="run.bat" />
+		<copydir dest="${output.dir}/${lib.dir}" src="./${lib.dir}" />
 
 		<!-- javac -->
 		<javac destdir="${build.dir}" includeantruntime="on">
@@ -34,7 +33,7 @@
 			</fileset>
 			<manifest>
 				<attribute name="Main-Class" value="com.test.TestMain" />
-				<attribute name="Class-Path" value="lib/log4j-1.2.17.jar" />
+				<attribute name="Class-Path" value="${lib.dir}/log4j-1.2.17.jar " />
 			</manifest>
 		</jar>
 	</target>
