@@ -3,6 +3,7 @@
 	<!--properties-->
 	<property name="jarfile.name" value="log4jTest.jar" />
 	<property name="output.dir" value="Execute" />
+	<property name="output.file" value="log4jTest.zip" />
 	<property name="lib.dir" value="lib" />
 	<property name="java.src" value="src" />
 	<property name="build.dir" value="build/classes" />
@@ -36,5 +37,10 @@
 				<attribute name="Class-Path" value="${lib.dir}/log4j-1.2.17.jar " />
 			</manifest>
 		</jar>
+
+		<!-- zip -->
+		<zip destfile="${output.dir}/${output.file}">
+			<zipfileset dir="${output.dir}/" />
+		</zip>
 	</target>
 </project>
