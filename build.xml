@@ -1,13 +1,48 @@
 <?xml version="1.0" encoding="GBK"?>
 <project name="log4jTest_Build" default="buildJar" basedir=".">
-	<target name="buildJar"  >
-		<jar jarfile="./Execute/log4jTest.jar" compress="yes">
+	<!--properties-->
+	<property name="jarfile.name" value="log4jTest.jar">
+	</property>
+	<property name="output.dir" value="Execute">
+	</property>
+	<property name="Class.dir" value="bin">
+	</property>
+	<property name="lib.dir" value="lib">
+	</property>
+	<property name="java.src" value="src">
+	</property>
+	<property name="build.dir" value="build/classes">
+	</property>
+	<!-- build -->
+	<target name="buildJar">
+		<delete dir="${output.dir}" />
+		<delete dir="${build.dir}" />
+		<mkdir dir="${output.dir}" />
+		<mkdir dir="${output.dir}/${lib.dir}" />
+		<mkdir dir="${build.dir}" />
+		<copy todir="./${output.dir}" file="run.bat">
+		</copy>
+		<copydir dest="${output.dir}/${lib.dir}" src="./${lib.dir}">
+		</copydir>
+
+		<!-- javac -->
+		<javac destdir="${build.dir}" includeantruntime="on">
+			<src path="${java.src}" />
+			<classpath>
+				<fileset dir="${lib.dir}">
+					<include name="**/*.jar" />
+				</fileset>
+			</classpath>
+		</javac>
+
+		<!-- jar -->
+		<jar jarfile="./${output.dir}/${jarfile.name}" compress="yes">
 			<fileset dir="./bin" includes="com/**, log4j.properties">
 			</fileset>
-			<manifest>  
-                <attribute name="Main-Class" value="com.test.TestMain"/>
-				<attribute name="Class-Path" value="lib/log4j-1.2.17.jar"/>  
-            </manifest>  
+			<manifest>
+				<attribute name="Main-Class" value="com.test.TestMain" />
+				<attribute name="Class-Path" value="lib/log4j-1.2.17.jar" />
+			</manifest>
 		</jar>
 	</target>
 </project>
