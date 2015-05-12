@@ -1,18 +1,11 @@
 <?xml version="1.0" encoding="GBK"?>
 <project name="log4jTest_Build" default="buildJar" basedir=".">
 	<!--properties-->
-	<property name="jarfile.name" value="log4jTest.jar">
-	</property>
-	<property name="output.dir" value="Execute">
-	</property>
-	<property name="Class.dir" value="bin">
-	</property>
-	<property name="lib.dir" value="lib">
-	</property>
-	<property name="java.src" value="src">
-	</property>
-	<property name="build.dir" value="build/classes">
-	</property>
+	<property name="jarfile.name" value="log4jTest.jar" />
+	<property name="output.dir" value="Execute" />
+	<property name="lib.dir" value="lib" />
+	<property name="java.src" value="src" />
+	<property name="build.dir" value="build/classes" />
 	<!-- build -->
 	<target name="buildJar">
 		<delete dir="${output.dir}" />
