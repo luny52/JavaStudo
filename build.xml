@@ -30,7 +30,7 @@
 
 		<!-- jar -->
 		<jar jarfile="./${output.dir}/${jarfile.name}" compress="yes">
-			<fileset dir="./bin" includes="com/**, log4j.properties">
+			<fileset dir="./${build.dir}" includes="com/**, log4j.properties">
 			</fileset>
 			<manifest>
 				<attribute name="Main-Class" value="com.test.TestMain" />
