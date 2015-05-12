@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="GBK"?>
 <project name="log4jTest_Build" default="buildJar" basedir=".">
 	<target name="buildJar"  >
-		<jar jarfile="./log4jTest.jar" compress="yes">
+		<jar jarfile="./Execute/log4jTest.jar" compress="yes">
 			<fileset dir="./bin" includes="com/**, log4j.properties">
 			</fileset>
 			<manifest>  
