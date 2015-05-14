@@ -21,6 +21,7 @@
 		<!-- javac -->
 		<javac destdir="${build.dir}" includeantruntime="on">
 			<src path="${java.src}" />
+			<compilerarg line="-encoding UTF-8 " />
 			<classpath>
 				<fileset dir="${lib.dir}">
 					<include name="**/*.jar" />
