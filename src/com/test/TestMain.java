@@ -30,7 +30,7 @@ public class TestMain {
 			fileAppender.activateOptions();
 		}
 
-		log.warn("123!!!ÖÐÎÄ");
+		log.warn("123!!!你好");
 
 		log.debug("log.debug");
 
@@ -40,7 +40,7 @@ public class TestMain {
 
 		log.fatal("log.fatal");
 
-		log1.warn("123!!!ÖÐÎÄ111");
+		log1.warn("123!!!我也好");
 
 		log1.debug("log.debug111");
 
