@@ -16,12 +16,14 @@ public class TestMain {
 
 	static Logger log1 = Logger.getLogger("mylogger1");
 
+
 	public static void main(String[] args) {
 		PropertyConfigurator.configure(ClassLoader
 				.getSystemResource("log4j.properties"));
 
 		Appender appender = LogManager.getLoggerRepository().getRootLogger()
 				.getAppender("ServerDailyRollingFile");
+
 		if (appender instanceof FileAppender) {
 			FileAppender fileAppender = (FileAppender) appender;
 			fileAppender.setFile("bin/logs/notify."
@@ -32,6 +34,9 @@ public class TestMain {
 
 		log.warn("123!!!你好");
 
+        
+        log.warn("44111");
+
 		log.debug("log.debug");
 
 		log.info("log.info");
@@ -40,7 +45,7 @@ public class TestMain {
 
 		log.fatal("log.fatal");
 
-		log1.warn("123!!!我也好");
+		log1.warn("123!!!");
 
 		log1.debug("log.debug111");
 
