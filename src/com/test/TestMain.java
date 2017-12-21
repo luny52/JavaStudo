@@ -17,6 +17,8 @@ public class TestMain {
 	static Logger log1 = Logger.getLogger("mylogger1");
 
 	// 注释24455
+	
+	//kk gg
 	public static void main(String[] args) {
 		PropertyConfigurator.configure(ClassLoader
 				.getSystemResource("log4j.properties"));
