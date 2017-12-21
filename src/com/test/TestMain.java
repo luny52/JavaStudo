@@ -42,13 +42,13 @@ public class TestMain {
 
 		log.info("log.info");
 
-		log.error("log.error");
-
-		log.fatal("log.fatal");
-
-		log1.warn("123!!!");
-
-		log1.debug("log.debug111");
+//		log.error("log.error");
+//
+//		log.fatal("log.fatal");
+//
+//		log1.warn("123!!!");
+//
+//		log1.debug("log.debug111");
 
 		log1.info("log.info111");
 
