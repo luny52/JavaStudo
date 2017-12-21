@@ -16,7 +16,7 @@ public class TestMain {
 
 	static Logger log1 = Logger.getLogger("mylogger1");
 
-
+	// 注释
 	public static void main(String[] args) {
 		PropertyConfigurator.configure(ClassLoader
 				.getSystemResource("log4j.properties"));
@@ -34,8 +34,7 @@ public class TestMain {
 
 		log.warn("123!!!你好");
 
-        
-        log.warn("44111");
+		log.warn("44111");
 
 		log.debug("log.debug");
 
@@ -62,15 +61,15 @@ public class TestMain {
 		// 123test ....
 
 		// lllll]]]]
-		
-		//ooooo
+
+		// ooooo
 
 	}
 
 	private void test() {
 
 		// 111
-		//33333
+		// 33333
 	}
 
 }
