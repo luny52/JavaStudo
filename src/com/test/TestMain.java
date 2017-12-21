@@ -18,7 +18,7 @@ public class TestMain {
 
 	// 注释24455
 	
-	//kk
+	//kk gg
 	public static void main(String[] args) {
 		PropertyConfigurator.configure(ClassLoader
 				.getSystemResource("log4j.properties"));
