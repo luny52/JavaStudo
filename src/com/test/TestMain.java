@@ -17,7 +17,7 @@ public class TestMain {
 	static Logger log1 = Logger.getLogger("mylogger1");
 
 	// 注释24455
-	
+	// 
 	// df
 	//kk gg
 	public static void main(String[] args) {
