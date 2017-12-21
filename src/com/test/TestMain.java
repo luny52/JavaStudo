@@ -56,9 +56,9 @@ public class TestMain {
 
 		log1.error("log.error111");
 
-		log1.fatal("log.fatal111");
-
-		log1.fatal("log.fatal777");
+//		log1.fatal("log.fatal111");
+//
+//		log1.fatal("log.fatal777");
 
 		// 123test ....
 
